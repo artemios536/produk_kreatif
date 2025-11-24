@@ -1,5 +1,5 @@
 .container {
-  width: 900px;
+  width: 960px;
   margin: auto;
   background-color: white;
 }
@@ -38,8 +38,29 @@ body {
   background-size: cover;
   border-bottom: 5px solid rgb(184, 172, 174);
 }
+.sidebar img {
+  width: 200px;
+}
+.sidebar {
+  float: right;
+  width: 300px;
+}
+.sidebar h3 {
+  font-weight: bold;
+  color: #545355;
+}
+.content .content {
+  width: 860px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 .main {
+  width: 550px;
   padding: 20px;
+  box-sizing: border-box;
+  float: left;
 }
 .main h2 {
   font-size: 32px;
@@ -57,4 +78,19 @@ body {
   padding: 10px;
   text-align: center;
   font-size: 10px;
+}
+
+/*clearfix */
+
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
 }
